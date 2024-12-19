@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Coffee Website </title>
+    <!--Link TO CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Box Icons-->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <header>
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="">
+        </a>
+        <!--Menu-Icon-->
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <!--Links-->
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">products</a></li>
+            <li><a href="#coffee">Coffee</a></li>
+            <li><a href="#customers">customers</a></li>
+        </ul>
+        <!--Icon-->
+        <div class="header-icon">
+            <i class='bx bx-cart-alt' id="open_cart_menu"></i>
+            <i class='bx bx-search' id="search-icon"></i>
+        </div>
+        <!--Search Box-->
+        <div class="search-box">
+            <input type="search" name="" id="" placeholder="Search Here...">
+        </div>
+        <span id="cart-count">0</span>
+        <div
+            id="cart_header_menu"
+            class="cart"
+        >
+            <div class="cart-wrapper" id="cart_content">
+                <span id="product"></span>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <!--Home-->
+        <section class="home" id="home">
+            <div class="home-text">
+                <h1>Start your day <br> with coffee</h1>
+                <p>Coffee is ilegal drags.</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="home-img">
+                <img src="img/main.png" alt="">
+            </div>
+        </section>
+        <!--About-->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="img/about.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <h2>Our History</h2>
+                <p>Kawiarnia "Lunos" Oferuje ona wyjątkowe doświadczenie, łącząc w sobie nie tylko pyszne napoje, ale także wnętrze inspirowane gwiazdami. Zaoferują Ci gorące i zimne napoje, które symbolizują gwiazdy i planety. Wyobraź sobie, że każdy napój reprezentuje pewien obiekt astronomiczny, odzwierciedlając jego unikalny smak i atmosferę.</p>
+                <p>Na przykład, możesz spróbować napoju o nazwie "Zatopienie Słońca" - to może być gorąca kawa z nutą czekolady i syropem karmelowym, uosabiająca moc i ciepło Słońca. Lub "Fioletowy Satelita" - to zimny napój na bazie fioletowej herbaty z dodatkiem syropów owocowych, symbolizujący tajemniczość i piękno kosmicznych ciał.</p>
+                <p>Takie nazwy i kombinacje napojów pomogą stworzyć wyjątkową atmosferę i dodadzą magii Twojej wizycie w "Lunos". Będzie interesująco nie tylko spróbować tych napojów, ale także cieszyć się designem i atmosferą kawiarni, w której gwiazdy staną się częścią Twojego doświadczenia.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+
+        </section>
+        <!--Products-->
+        <section class="products" id="products">
+            <div class="heading">
+                <h2>Our popular products</h2>
+            </div>
+            <!--Container-->
+            <div class="products-container">
+                <div class="box">
+                    <img src="img/p1.png" alt="">
+                    <h3>Americano Pure</h3>
+                    <p>Americano Pure to rodzaj kawy, który powstał na bazie klasycznego Americano.
+                        Americano Pure wyróżnia się wysoką jakością składników i czystym, intensywnym smakiem.
+                        To idealny wybór dla osób, które preferują prostą, delikatną kawę bez dodatków.
+                    </p>
+                    <div class="content">
+                        <span>25zl</span>
+                        <button type="button" id="add_button">Add to cart</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/p2.png" alt="">
+                    <h3>Latte Pure</h3>
+                    <p>Latte jest kawowym napojem, który składa się z espresso i mleka.
+                        To popularna włoska kawa, która jest również powszechnie spożywana na całym świecie.
+                        Espresso stanowi bazę latte, a następnie jest mieszane z ciepłym mlekiem, aby uzyskać delikatny smak i kremową konsystencję.</p>
+                    <div class="content">
+                        <span>28zl</span>
+                        <button type="button" id="add_button">Add to cart</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/p3.png" alt="">
+                    <h3>Matcha Latte</h3>
+                    <p>Matcha Latte to napój przygotowany z zielonej herbaty matcha i mleka. Matcha to japońska herbata w proszku o intensywnym, trawiastym smaku.
+                        Latte oznacza, że matcha jest mieszana z mlekiem, tworząc kremową i aromatyczną kompozycję</p>
+                    <div class="content">
+                        <span>22zl</span>
+                        <button type="button" id="add_button">Add to cart</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/p4.png" alt="">
+                    <h3>Gorąca czekolada</h3>
+                    <p>Gorąca czekolada to pyszny napój na bazie czekolady, który często podawany jest gorący lub z lekkim posmakiem przypraw. Jest gęsty, kremowy i aromatyczny, idealny na chłodne dni.
+                        Może być podawany z bitą śmietaną, wiórkami czekoladowymi lub posypany kakao</p>
+                    <div class="content">
+                        <span>25zl</span>
+                        <button type="button" id="add_button">Add to cart</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/p5.png" alt="">
+                    <h3>   Gorąca czekolada z kokosem </h3>
+                    <p>Gorąca czekolada z kokosem to pyszny napój o intensywnym smaku czekolady z dodatkiem aromatycznego kokosa. Gorący, kremowy i rozgrzewający, doskonale nadaje się na chłodne dni. Czekolada jest doskonale rozpuszczona, a kokosowy dodatek nadaje jej delikatności i subtelnego egzotycznego smaku.</p>
+                    <div class="content">
+                        <span>29zl</span>
+                        <button type="button" id="add_button">Add to cart</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/p6.png" alt="">
+                    <h3>Zielona herbata z różami </h3>
+                    <p>Zielona herbata z różami to harmonijne połączenie świeżości i delikatności. Zielone liście herbaty ożywiają zmysły swoim lekko trawiastym smakiem, podczas gdy płatki róż dodają subtelności i romantycznego aromatu. To doskonały napój dla osób poszukujących chwili relaksu i odprężenia. Zielony herbata z różami jest nie tylko smaczna, ale również pięknie prezentuje się w filiżance dzięki dodatkowi kolorowych płatków.
+                    </p>
+                    <div class="content">
+                        <span>33zl</span>
+                        <button type="button" id="add_button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+        <!--Coffee-->
+        <section class="Coffee" id="Coffee">
+            <div class="heading">
+                <h2>Our popular coffee</h2>
+            </div>
+            <!--Container-->
+            <div class="coffee-container">
+                <div id="products_container" class="products-container">
+                </div>
+
+                <!--            <div class="box">-->
+                <!--                <img src="img/cloudhotchokolate.jpg" alt="">-->
+                <!--                <h3>Cloud Chokolate</h3>-->
+                <!--                <div class="content">-->
+                <!--                <span>26zl</span>-->
+                <!--                    <button type="button" id="add_button">Add to cart</button>-->
+                <!--            </div>-->
+                <!--            </div>-->
+
+                <!--            <div class="box">-->
+                <!--                <img src="img/moon hot chocolatte.jpg" alt="">-->
+                <!--                <h3>Moon Chokolate</h3>-->
+                <!--                <div class="content">-->
+                <!--                <span>19zl</span>-->
+                <!--                    <button type="button" id="add_button">>Add to cart</button>-->
+                <!--            </div>-->
+                <!--            </div>-->
+
+                <!--            <div class="box">-->
+                <!--                <img src="img/mooncapucino.jpg" alt="">-->
+                <!--                <h3>Moon Capucino</h3>-->
+                <!--                <div class="content">-->
+                <!--                <span>26zl</span>-->
+                <!--                    <button type="button" id="add_button">Add to cart</button>-->
+                <!--            </div>-->
+                <!--            </div>-->
+
+                <!--            <div class="box">-->
+                <!--                <img src="img/rainbow capucino.jpg" alt="">-->
+                <!--                <h3>Rainbow Capucino</h3>-->
+                <!--                <div class="content">-->
+                <!--                <span>33zl</span>-->
+                <!--                    <button type="button" id="add_button">Add to cart</button>-->
+                <!--            </div>-->
+                <!--            </div>-->
+
+                <!--            <div class="box">-->
+                <!--                <img src="img/ramericano.jpg" alt="">-->
+                <!--                <h3>Rainbow Americano</h3>-->
+                <!--                <div class="content" >-->
+                <!--               <span>22zl</span>-->
+                <!--                    <button type="button" id="add_button">Add to cart</button>-->
+                <!--            </div>-->
+                <!--            </div>-->
+            </div>
+    </div>
+
+
+
+
+
+
+    </section>
+    <!--Customers-->
+    <section class="customers" id="customers">
+        <div class="heading">
+            <h2>Our customer's</h2>
+        </div>
+        <!--Container-->
+        <div class="customers-conteiner">
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Kawiarnia, która doskonale łączy komfort z doskonałą kawą. Właściciele i personel są niezwykle gościnni i zawsze dbają o to, abyś poczuł się jak w domu. Zdecydowanie polecam!</p>
+                <h2>Yasin Arafat</h2>
+                <img src="img/rev1.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Nasza wizyta w kawiarni była niezwykła! Przytulna atmosfera, wspaniała obsługa i oczywiście pyszna kawa. To miejsce, do którego zawsze będziemy wracać. Dziękujemy</p>
+                <h2>Jan Wart</h2>
+                <img src="img/rev2.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Nie mogę sobie wyobrazić lepszego miejsca na spędzanie czasu niż ta kawiarnia. Kawa jest zawsze doskonała, a personel jest niezwykle uprzejmy i pomocny. Bardzo polecam</p>
+                <h2>Sonia Rem</h2>
+                <img src="img/rev3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    </div>
+    <section class="footer">
+        <div class="footer-box">
+            <h2>Coffee Shop</h2>
+            <p> Coffee - A magical brown liguiid, ground from beans and necessary for human life</p>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+        </div>
+        <div class="footer-box">
+        <h3>Support</h3>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Help & Support</a></li>
+        <li><a href="#">Return</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Product</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>View Guides</h3>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog Posts</a></li>
+            <li><a href="#">Our Branches</a></li>
+            </div>
+            <div class="foother-box">
+                <h3>Contact</h3>
+                <div class="contact">
+                    <span><i class='bx bxs-map'></i>250 Wroclaw, Poland 23422</span>
+                    <span><i class='bx bxs-phone'></i>+48 995 456 889</span>
+                    <span><i class='bx bxs-envelope'></i>coffee@shop.com</span>
+                </div>
+            </div>
+    </section>
+    <!--Copy-->
+    <div class="copyright">
+        <p>&#169; The best coffee for you</p>
+    </div>
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+<!--Link to JS-->
+<script src="main.js"></script>
+</body>
+</html>
